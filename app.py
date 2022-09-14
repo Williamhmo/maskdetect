@@ -77,12 +77,12 @@ button[type=submit]:hover
 
 def main():
     menu=['Home','Detect mask😷',' Contact developer📧']
-    st.sidebar.image("images/homeimg.jpg")
+    st.sidebar.image("images/sideimg.jpg")
     choice=st.sidebar.selectbox('Menu',menu)
     
     if choice == 'Home':
         st.header('Welcome to the app!')
-        st.image("images/sideimg.jpg")
+        st.image("images/homeimg.jpg")
         st.write('The issue of wearing face coverings in public\
             comes up frequently these days. A common sentiment \
             is, “If I am not personally at high risk for COVID-19, why should I wear a mask?” \
