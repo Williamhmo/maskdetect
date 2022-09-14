@@ -77,13 +77,13 @@ button[type=submit]:hover
 
 def main():
     menu=['Home','Detect mask😷',' Contact developer📧']
-    sidebarImg=Image.open('https://github.com/Williamhmo/maskdetect/blob/main/images/download%20(2).jpg')
+    sidebarImg=Image.open('images/download%20(2).jpg')
     st.sidebar.image(sidebarImg)
     choice=st.sidebar.selectbox('Menu',menu)
     
     if choice == 'Home':
         st.header('Welcome to the app!')
-        homeImg=Image.open('https://github.com/Williamhmo/maskdetect/blob/main/images/face-mask-emoji-concept-illustration_114360-6244.jpg')
+        homeImg=Image.open('images/face-mask-emoji-concept-illustration_114360-6244.jpg')
         st.image(homeImg)
         st.write('The issue of wearing face coverings in public\
             comes up frequently these days. A common sentiment \
