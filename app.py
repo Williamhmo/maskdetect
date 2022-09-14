@@ -82,7 +82,7 @@ def main():
     
     if choice == 'Home':
         st.header('Welcome to the app!')
-        st.image("images/face-mask-emoji-concept-illustration_114360-6244.jpg")
+        st.image("images/sideimg.jpg")
         st.write('The issue of wearing face coverings in public\
             comes up frequently these days. A common sentiment \
             is, “If I am not personally at high risk for COVID-19, why should I wear a mask?” \
