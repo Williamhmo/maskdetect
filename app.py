@@ -77,7 +77,7 @@ button[type=submit]:hover
 
 def main():
     menu=['Home','Detect mask😷',' Contact developer📧']
-    st.sidebar.image("images/download 20(2).jpg")
+    st.sidebar.image("images/homeimg.jpg")
     choice=st.sidebar.selectbox('Menu',menu)
     
     if choice == 'Home':
