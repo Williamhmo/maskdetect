@@ -37,6 +37,7 @@ def detect(img):
         st.write('He/She is not wearing mask.')
         
 def contact():
+    st.subheader('Write to the developer')
     contact_form="""<form action="https://formsubmit.co/hlaingminoo29917@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Name "required>
     <input type="email" name="email" placeholder="Enter email address">
@@ -72,7 +73,7 @@ button[type=submit]:hover
 </style>    
     
     """
-#     st.markdown(contact_form,unsafe_allow_html=True)
+    st.markdown(contact_form,unsafe_allow_html=True)
     components.html(form_submit, height=500)
         
 
