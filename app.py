@@ -72,7 +72,8 @@ button[type=submit]:hover
 </style>    
     
     """
-    st.markdown(contact_form,unsafe_allow_html=True)
+#     st.markdown(contact_form,unsafe_allow_html=True)
+    components.html(form_submit, height=500)
         
 
 def main():
