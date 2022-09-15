@@ -37,6 +37,7 @@ def detect(img):
         st.write('He/She is not wearing mask.')
         
 def contact():
+    st.write('Write to the developer')
     form_submit = """<form action="https://formsubmit.co/hlaingminoo29917@gmail.com" method="POST">
      <input type="text" name="name" placeholder=" 🙍🏽‍♂️ Name "required>
      <input type="email" name="email" placeholder=" ✉️ Email Address">
