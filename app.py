@@ -23,7 +23,7 @@ def takePhoto():
         return img
     
 def detect(img):
-    model=keras.models.load_model("model3_maskdataall.h5")
+    model=keras.models.load_model("model2_maskdataall.h5")
     img=ImageOps.fit(img,(250,250),Image.ANTIALIAS)
     x = tf.keras.preprocessing.image.img_to_array(img)
     x = np.expand_dims(x,axis=0)
