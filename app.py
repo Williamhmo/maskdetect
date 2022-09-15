@@ -37,15 +37,14 @@ def detect(img):
         st.write('He/She is not wearing mask.')
         
 def contact():
-    st.subheader('Write to the developer')
-    contact_form="""<form action="https://formsubmit.co/hlaingminoo29917@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Name "required>
-    <input type="email" name="email" placeholder="Enter email address">
-    <textarea id="subject" name="subject" placeholder="Your message here..." style="height:200px"></textarea>
-    <input type="hidden" name="_captcha" value="false">
-    <button type="submit">Send</button>
-    </form>
-    <style>
+    form_submit = """<form action="https://formsubmit.co/hlaingminoo29917@gmail.com" method="POST">
+     <input type="text" name="name" placeholder=" 🙍🏽‍♂️ Name "required>
+     <input type="email" name="email" placeholder=" ✉️ Email Address">
+     <textarea id="subject" name="subject" placeholder=" 📝 Write something.." style="height:200px"></textarea>
+     <input type="hidden" name="_captcha" value="false">
+     <button type="submit">Send</button>
+     </form>
+     <style>
 input[type=text],input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
@@ -70,11 +69,10 @@ button[type=submit]:hover
   background-color: #2E34DA;
   color = white;
 }
-</style>    
-    
-    """
-    st.markdown(contact_form,unsafe_allow_html=True)
-#     components.html(contact_form, height=500)
+</style>
+     """
+    # st.markdown(form_submit,unsafe_allow_html=True) this is not work css of button class
+    components.html(form_submit, height=500)
         
 
 def main():
