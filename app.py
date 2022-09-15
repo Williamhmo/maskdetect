@@ -72,7 +72,7 @@ button[type=submit]:hover
 }
 </style>
      """
-    # st.markdown(form_submit,unsafe_allow_html=True) this is not work css of button class
+    # st.markdown(form_submit,unsafe_allow_html=True)
     components.html(form_submit, height=500)
         
 
