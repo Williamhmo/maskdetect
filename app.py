@@ -104,8 +104,9 @@ def main():
             else:
                 st.success("Detecting photo in the model...\nPlease wait a second!")
                 detect(photo)
+    
     elif choice=='Contact developer📧':
-        contact()           
+        contact()          
     
     
     
