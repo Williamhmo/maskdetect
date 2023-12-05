@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image,ImageOps
 import keras
+import PIL
 import tensorflow as tf
 import numpy as np
 from keras_preprocessing.image import img_to_array
@@ -24,7 +25,7 @@ def takePhoto():
     
 def detect(img):
     model=keras.models.load_model("model2_maskdataall.h5")
-    img=ImageOps.fit(img,(250,250),Image.ANTIALIAS)
+    img=ImageOps.fit(img,(250,250),PIL.Image.Resampling.LANCZOS)
     x = tf.keras.preprocessing.image.img_to_array(img)
     x = np.expand_dims(x,axis=0)
     x /= 255.0
